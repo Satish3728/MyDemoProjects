@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Yahoo mail">
+	<parameter name="browserName" value="chrome" />
+	<parameter name="url" value="https://login.yahoo.com/" />
+	<parameter name="email" value="skrd156" />
+	<parameter name="password" value="HULKOTI155" />
+	<parameter name="recepient1" value="shilpava97@gmail.com" />
+	<parameter name="recepient2" value="kvallipur96@gmail.com" />
+	<parameter name="recepient3" value="skrd156@gmail.com" />
+  <test thread-count="5" name="send mail">
+    <classes>
+      <class name="project4.YahooMail">
+      <methods>
+      	<include name = "launchApp"/>
+      	<include name = "yahoo"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- send mail -->
+</suite> <!-- Yahoo mail -->

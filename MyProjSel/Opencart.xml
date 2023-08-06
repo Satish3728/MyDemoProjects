@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browserName" value="chrome" />
+	<parameter name="url"
+		value="https://tutorialsninja.com/demo/" />
+	<parameter name="email" value="ABC7@gnmail.com" />
+	<parameter name="password" value="ABCDE" />
+	<test name="OpenCartBuy">
+		<parameter name="firstName" value="ABC" />
+		<parameter name="lastName" value="ABC" />
+		<parameter name="telephone" value="ABC" />
+		<classes>
+			<class name="project2.OpenCart">
+				<methods>
+					<include name="launchApp" />
+					<include name="register" />
+					<include name="logOut" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="OpenCartRegister">
+		<classes>
+			<class name="project2.OpenCart">
+				<methods>
+					<include name="launchApp" />
+					<include name="login" />
+					<include name="addToCart" />
+					<include name="logOut" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

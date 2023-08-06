@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="ABCDE"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="url" value="https://tutorialsninja.com/demo/"/>
+  <parameter name="email" value="ABC5@gnmail.com"/>
+  <test thread-count="5" name="OpenCartBuy(failed)">
+    <parameter name="firstName" value="ABC"/>
+    <parameter name="lastName" value="ABC"/>
+    <parameter name="telephone" value="ABC"/>
+    <classes>
+      <class name="project2.OpenCart">
+        <methods>
+          <include name="initialiseBrowser"/>
+          <include name="register" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- project2.OpenCart -->
+    </classes>
+  </test> <!-- OpenCartBuy(failed) -->
+  <test thread-count="5" name="OpenCartRegister(failed)">
+    <classes>
+      <class name="project2.OpenCart">
+        <methods>
+          <include name="initialiseBrowser"/>
+          <include name="close"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- project2.OpenCart -->
+    </classes>
+  </test> <!-- OpenCartRegister(failed) -->
+</suite> <!-- Failed suite [Suite] -->

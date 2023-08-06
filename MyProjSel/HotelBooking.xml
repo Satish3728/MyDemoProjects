@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HotelPlanisphere">
+	<parameter name="browserName" value="chrome" />
+	<parameter name="url" value="https://hotel.testplanisphere.dev/" />
+	<test thread-count="5" name="SignUp" enabled="true">
+	<parameter name="email" value="abcd6@gmail.com" />
+	<parameter name="password" value="87654321" />
+		<classes>
+			<class name="project3.HotelPlanisphere">
+				<methods>
+					<include name="launchApp" />
+					<include name="signUp" />
+					<include name="logOut" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- SignUp -->
+	<test thread-count="5" name="Login" enabled="true">
+	<parameter name="email" value="clark@example.com" />
+	<parameter name="password" value="password" />
+		<classes>
+			<class name="project3.HotelPlanisphere">
+				<methods>
+					<include name="launchApp" />
+					<include name="login" />
+					<include name="logOut" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- SignUp -->
+	<test thread-count="5" name="RoomBooking" enabled="true">
+	<!--<parameter name="browserName" value="chrome" /> -->
+	<parameter name="email" value="clark@example.com" />
+	<parameter name="password" value="password" />
+		<classes>
+			<class name="project3.HotelPlanisphere">
+				<methods>
+					<include name="launchApp" />
+					<include name="reserveRoom" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- SignUp -->
+</suite> <!-- HotelPlanisphere -->

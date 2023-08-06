@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HotelPlanisphere]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="url" value="https://hotel.testplanisphere.dev/"/>
+  <test thread-count="5" name="RoomBooking(failed)">
+    <parameter name="password" value="password"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="email" value="clark@example.com"/>
+    <classes>
+      <class name="project3.HotelPlanisphere">
+        <methods>
+          <include name="initialiseBrowser"/>
+          <include name="launchApp"/>
+          <include name="close"/>
+          <include name="reserveRoom"/>
+        </methods>
+      </class> <!-- project3.HotelPlanisphere -->
+    </classes>
+  </test> <!-- RoomBooking(failed) -->
+</suite> <!-- Failed suite [HotelPlanisphere] -->
