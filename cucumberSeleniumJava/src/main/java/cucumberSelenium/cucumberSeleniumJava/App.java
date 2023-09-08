@@ -1,4 +1,4 @@
-package DemonMVN.MProjSel;
+package cucumberSelenium.cucumberSeleniumJava;
 
 /**
  * Hello world!
